@@ -1,0 +1,198 @@
+.hidden
+{
+    display:none;
+}
+table td{
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+.table
+{
+background-color: white;
+z-index:0;
+
+}
+tr :hover
+{
+
+background-color:rgb(166, 166, 225)
+
+}
+
+
+
+#user_section{
+
+
+    width:60vw;
+}
+#device_section{
+
+
+    width:60vw;
+}
+#mapping_section{
+
+
+    width:60vw;
+}
+#measurement_section
+{
+    width:60vw;
+}
+.table
+{    
+     
+     border:2px solid rgb(37, 148, 211);
+    
+}
+input{
+
+    background-color:white;
+    border:2px solid rgb(37, 148, 211);
+
+}
+input:hover{
+
+    background-color:lightgoldenrodyellow;
+    
+}
+h1
+{
+    margin-top:0px;
+}
+form
+{
+    justify-content: space-evenly;
+    border:2px solid black;
+    background-color:rgb(37, 148, 211)
+
+
+
+}
+button{
+
+
+    background-color:rgb(41, 99, 216);
+    border:2px solid rgb(37, 148, 211);
+    color:white;
+    margin-right:50px;
+}
+button:hover{
+
+
+    background-color:rgb(72, 115, 202);
+    color:rgb(62, 207, 223)
+}
+body{
+     
+    margin-top:0px;
+    padding-top:0px;
+    width:100vw;
+   
+}
+
+.girl
+{
+
+background-color: rgb(212, 3, 3);
+
+}
+
+.jumper:hover
+{
+    color:rgb(62, 207, 223)
+
+
+}
+nav
+{
+width:200px;
+height:100vh;
+top:0;
+left:0;
+position: fixed;
+background-color: aquamarine;
+margin:0;
+overflow:hidden;
+z-index:1;
+
+
+}
+
+body{
+
+    margin:0px 0px 0px 0px;
+}
+
+.main 
+{   
+    
+     width: 89vw;
+   
+    background-color:gainsboro;
+
+    padding:50px;
+
+}
+.nav_open
+{    
+    width:77.25vw;
+    transform:translateX(175px);
+
+    background-color:gainsboro
+
+}
+.action_button
+{
+
+width:125px;
+
+}
+
+tr:nth-child(even)
+{
+
+    background-color:#ddd9
+
+
+}
+#buttons_meniu
+{
+ width:200px;
+ display:flex;
+ justify-content: flex-end;
+
+
+}
+form{
+   
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav_close
+{
+    transform:translateX(-175px);
+
+}
+thead
+{
+
+background-color: lightblue;
+
+
+}
+.girly
+{
+
+background-color:rgb(124, 22, 22)
+
+}
+.girly_tab
+{
+
+background-color: lightcoral;
+
+}
+

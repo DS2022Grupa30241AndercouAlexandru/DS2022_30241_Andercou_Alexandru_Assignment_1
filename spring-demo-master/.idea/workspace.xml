@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41508b3d-0bcf-4778-80e0-369cb9b3012c" name="Changes" comment="com" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2FjHA5FOBgCGAVGSvK0GRI8C5eD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "import_schema_mapping": "<schema-mapping>\n  <databases>\n    <list>\n      <schema-mapping-item>\n        <source-data-source-id>413b87db-860c-4000-b3dd-d3fa1664e186</source-data-source-id>\n        <source-path>database/&quot;city-db&quot;/schema/&quot;public&quot;</source-path>\n        <target-data-source-id>413b87db-860c-4000-b3dd-d3fa1664e186</target-data-source-id>\n        <target-path>database/&quot;city-db&quot;/schema/&quot;public&quot;</target-path>\n      </schema-mapping-item>\n    </list>\n  </databases>\n</schema-mapping>",
+    "last_opened_file_path": "C:/Users/Alexandru Andercou/Desktop/AssigmnentSD/spring-demo",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "spring.configuration.checksum": "c6680532ddf4ba4341dfd20137d1a554"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.Ds2022Application">
+    <configuration name="Ds2020Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="spring-demo-master" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ro.tuc.ds2022.Ds2022Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ds2022Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-demo-master" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ro.tuc.ds2022.Ds2022Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41508b3d-0bcf-4778-80e0-369cb9b3012c" name="Changes" comment="" />
+      <created>1664998427369</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664998427369</updated>
+      <workItem from="1664998428873" duration="742000" />
+      <workItem from="1665601966813" duration="32000" />
+      <workItem from="1665602008537" duration="540000" />
+      <workItem from="1665603336971" duration="249000" />
+      <workItem from="1665603594904" duration="199000" />
+      <workItem from="1665604126803" duration="5696000" />
+      <workItem from="1665641555011" duration="37000" />
+      <workItem from="1665641604964" duration="8021000" />
+      <workItem from="1665906223281" duration="11726000" />
+      <workItem from="1666242098521" duration="18042000" />
+      <workItem from="1666295387400" duration="10438000" />
+      <workItem from="1666580758448" duration="2123000" />
+      <workItem from="1666564017311" duration="1737000" />
+      <workItem from="1666778744934" duration="22609000" />
+      <workItem from="1666888790823" duration="8342000" />
+      <workItem from="1666896625278" duration="57250000" />
+      <workItem from="1667315357179" duration="11301000" />
+      <workItem from="1667397267063" duration="767000" />
+      <workItem from="1667455852437" duration="1614000" />
+      <workItem from="1667457992174" duration="3144000" />
+      <workItem from="1667461148299" duration="24000" />
+      <workItem from="1667461181756" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="com" />
+    <option name="LAST_COMMIT_MESSAGE" value="com" />
+  </component>
+</project>

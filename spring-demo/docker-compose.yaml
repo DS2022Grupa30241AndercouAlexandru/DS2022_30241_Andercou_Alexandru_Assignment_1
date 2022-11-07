@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+   tomcat-db-api:
+      image: spring_server2
+      ports:
+         - "8080:8080"
+

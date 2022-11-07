@@ -1,0 +1,65 @@
+
+.hidden
+{
+    display:none;
+}
+
+
+.valid
+{
+    color:green
+}
+
+.invalid
+{
+    color:red
+}
+body{
+ margin:auto;
+}
+button{
+    background-color: rgb(61, 51, 190);
+    color:white;
+    width: 100px ;
+    height: 50px;
+    border-radius: 5px 5px;
+   }
+
+   input[type="submit"]
+   {
+
+    background-color: rgb(61, 51, 190);
+    color:white;
+    width: 100px ;
+    height: 50px;
+    border-radius: 5px 5px;
+    margin-right:20px;
+
+
+   }
+   button:hover{
+    background-color: rgb(61, 51, 190);
+    color:rgb(184, 218, 238);
+    width: 100px ;
+    height: 50px;
+    border-radius: 5px 5px;
+   }
+   input:hover
+   {
+    background-color:rgb(186, 222, 244);
+
+   }
+div
+{
+  margin:auto;
+
+   
+    
+}
+a
+{
+
+
+    color:white;
+    text-decoration:none
+}

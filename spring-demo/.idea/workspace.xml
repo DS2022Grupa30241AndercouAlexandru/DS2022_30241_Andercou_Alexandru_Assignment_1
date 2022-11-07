@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41508b3d-0bcf-4778-80e0-369cb9b3012c" name="Changes" comment="com" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2FjHA5FOBgCGAVGSvK0GRI8C5eD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;\n  &lt;databases&gt;\n    &lt;list&gt;\n      &lt;schema-mapping-item&gt;\n        &lt;source-data-source-id&gt;413b87db-860c-4000-b3dd-d3fa1664e186&lt;/source-data-source-id&gt;\n        &lt;source-path&gt;database/&amp;quot;city-db&amp;quot;/schema/&amp;quot;public&amp;quot;&lt;/source-path&gt;\n        &lt;target-data-source-id&gt;413b87db-860c-4000-b3dd-d3fa1664e186&lt;/target-data-source-id&gt;\n        &lt;target-path&gt;database/&amp;quot;city-db&amp;quot;/schema/&amp;quot;public&amp;quot;&lt;/target-path&gt;\n      &lt;/schema-mapping-item&gt;\n    &lt;/list&gt;\n  &lt;/databases&gt;\n&lt;/schema-mapping&gt;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alexandru Andercou/Desktop/AssigmnentSD/spring-demo&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;be6b9fbdeec6980f5412d6a5d85b6de8&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Ds2022Application">
+    <configuration name="Ds2020Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="spring-demo-master" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ro.tuc.ds2022.Ds2022Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ds2022Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ro.tuc.ds2022.Ds2022Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ds2022Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="spring-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ro.tuc.ds2022.Ds2022Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41508b3d-0bcf-4778-80e0-369cb9b3012c" name="Changes" comment="" />
+      <created>1664998427369</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664998427369</updated>
+      <workItem from="1664998428873" duration="742000" />
+      <workItem from="1665601966813" duration="32000" />
+      <workItem from="1665602008537" duration="540000" />
+      <workItem from="1665603336971" duration="249000" />
+      <workItem from="1665603594904" duration="199000" />
+      <workItem from="1665604126803" duration="5696000" />
+      <workItem from="1665641555011" duration="37000" />
+      <workItem from="1665641604964" duration="8021000" />
+      <workItem from="1665906223281" duration="11726000" />
+      <workItem from="1666242098521" duration="18042000" />
+      <workItem from="1666295387400" duration="10438000" />
+      <workItem from="1666580758448" duration="2123000" />
+      <workItem from="1666564017311" duration="1737000" />
+      <workItem from="1666778744934" duration="22609000" />
+      <workItem from="1666888790823" duration="8342000" />
+      <workItem from="1666896625278" duration="57250000" />
+      <workItem from="1667315357179" duration="11301000" />
+      <workItem from="1667397267063" duration="767000" />
+      <workItem from="1667455852437" duration="1614000" />
+      <workItem from="1667457992174" duration="2441000" />
+      <workItem from="1667461196033" duration="7646000" />
+      <workItem from="1667564041351" duration="2212000" />
+      <workItem from="1667589340990" duration="2709000" />
+      <workItem from="1667689803528" duration="2388000" />
+      <workItem from="1667693265618" duration="2104000" />
+      <workItem from="1667754609288" duration="881000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="com" />
+    <option name="LAST_COMMIT_MESSAGE" value="com" />
+  </component>
+</project>

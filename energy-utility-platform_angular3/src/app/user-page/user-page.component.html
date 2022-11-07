@@ -1,0 +1,57 @@
+<body id="body">
+    <H1 id="title">Welcome to your user Page</H1>
+
+
+    <div id="table_section">
+        <p>Your associated Devices</p>
+        <br>
+        <table datatable [dtOptions]="dtOptions" [dtTrigger]="this.dtTrigger"
+            class="table table-bordered table-striped table-hover" id="devices">
+
+            <thead>
+                <tr>
+                    <th>Device id</th>
+                    <th>Nume device</th>
+                    <th>Description Device</th>
+                    <th>Max hourly Consumption</th>
+                    <th>Adress of device</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let device of this.devices">
+                    <td>{{ device.id }}</td>
+
+                    <td>{{ device.name}}</td>
+
+                    <td>{{ device.description }}</td>
+                    <td>{{ device.maximumHourlyEnergyConsumption }}</td>
+                    <td>{{ device.address }}</td>
+
+
+                </tr>
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+
+   <div id="charts_section">
+    <p>Devices charts</p>
+    <form>
+        <label for="date">Choose Day:</label>
+        <input type="date" id="date" (change)="setDate()">
+    </form>
+
+    <div class="chart_use">
+    <canvas id="canvas"></canvas>
+    </div>
+
+</div>
+
+
+
+
+</body>

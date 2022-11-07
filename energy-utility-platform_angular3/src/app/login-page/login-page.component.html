@@ -1,0 +1,35 @@
+
+
+<body>
+
+
+    <div>
+     
+<H1>Login-Page:Please log in or Sign In!</H1>
+
+<p id="message" class="hidden">Mesaje </p>
+
+<form  onsubmit="return false" [formGroup]="loginForm">
+
+<label for="username"><i class="fa fa-user"></i></label>
+<input type="text"  name="username" formControlName="username" placeholder="Username">
+<br>
+<br>
+<label for="password"><i class="fa fa-key"></i></label>
+<input type="password"  name="password" formControlName="password" placeholder="Password">
+<br>
+<br>
+<button  (click)="login()">LOGIN</button>
+</form>
+
+
+ <a routerLink="/signin">Register Now</a>
+<br>
+<br>
+ <a  routerLink="/reset_email">Forgot password?</a>
+
+</div>
+
+
+
+</body>
