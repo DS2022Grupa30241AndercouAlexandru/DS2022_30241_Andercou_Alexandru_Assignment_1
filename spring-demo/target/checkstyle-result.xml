@@ -161,6 +161,8 @@
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\Role.java">
 <error line="12" column="18" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
 </file>
+<file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\RoleType.java">
+</file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\UserAccount.java">
 <error line="22" column="18" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
 </file>
