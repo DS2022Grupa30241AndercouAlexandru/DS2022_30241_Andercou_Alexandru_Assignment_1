@@ -6,11 +6,12 @@ import ro.tuc.ds2022.entities.Device;
 import ro.tuc.ds2022.entities.UserAccount;
 import ro.tuc.ds2022.repositories.DeviceRepository;
 import ro.tuc.ds2022.repositories.UserRepository;
+import ro.tuc.ds2022.services.MappingService;
 
 @Service
 
 
-public class MappingServiceImplementation {
+public class MappingServiceImplementation implements MappingService {
      @Autowired
     public UserRepository userRepository;
 

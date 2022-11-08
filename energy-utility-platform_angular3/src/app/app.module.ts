@@ -16,6 +16,7 @@ import { DataTablesModule } from 'angular-datatables';
 import { NgChartjsModule } from 'ng-chartjs';
 import { ResetEmailComponent } from './reset-email/reset-email.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -34,12 +35,13 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+
     ReactiveFormsModule,
     NgChartsModule,
     DataTablesModule,
     NgChartjsModule.registerPlugin([])
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap:[AppComponent]
 })
 export class AppModule { }

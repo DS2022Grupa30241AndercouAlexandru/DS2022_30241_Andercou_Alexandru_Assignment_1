@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.18">
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\Admincontroller.java">
-<error line="12" column="34" severity="warning" message="Variable &apos;mappingService&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="14" column="5" severity="warning" message="Method &apos;postmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="15" column="29" severity="warning" message="Parameter md should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="22" column="5" severity="warning" message="Method &apos;postmethod4&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="23" column="29" severity="warning" message="Parameter md should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="7" column="8" severity="warning" message="Unused import - ro.tuc.ds2022.services.implementation.MappingServiceImplementation." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="13" column="20" severity="warning" message="Variable &apos;mappingService&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="15" column="5" severity="warning" message="Method &apos;postmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="16" column="29" severity="warning" message="Parameter md should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="23" column="5" severity="warning" message="Method &apos;postmethod4&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="24" column="29" severity="warning" message="Parameter md should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\DeviceController.java">
-<error line="19" column="40" severity="warning" message="Variable &apos;deviceServiceImplementation&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="22" column="5" severity="warning" message="Method &apos;postmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="23" column="29" severity="warning" message="Parameter device should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="29" column="5" severity="warning" message="Method &apos;postmethod3&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="30" column="29" severity="warning" message="Parameter device should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="35" column="5" severity="warning" message="Method &apos;postmethod4&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="36" column="29" severity="warning" message="Parameter device should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="41" column="5" severity="warning" message="Method &apos;readDevice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="42" column="30" severity="warning" message="Parameter Id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="42" column="63" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
-<error line="47" column="5" severity="warning" message="Method &apos;readDevice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="54" column="5" severity="warning" message="Method &apos;postmethod4&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="55" column="29" severity="warning" message="Parameter dm should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="9" column="8" severity="warning" message="Unused import - ro.tuc.ds2022.services.implementation.DeviceServiceImplementation." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="20" column="26" severity="warning" message="Variable &apos;deviceServiceImplementation&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="23" column="5" severity="warning" message="Method &apos;postmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="24" column="29" severity="warning" message="Parameter device should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="30" column="5" severity="warning" message="Method &apos;postmethod3&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="31" column="29" severity="warning" message="Parameter device should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="36" column="5" severity="warning" message="Method &apos;postmethod4&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="37" column="29" severity="warning" message="Parameter device should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="42" column="5" severity="warning" message="Method &apos;readDevice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="43" column="30" severity="warning" message="Parameter Id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="43" column="63" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="48" column="5" severity="warning" message="Method &apos;readDevice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="55" column="5" severity="warning" message="Method &apos;postmethod4&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="56" column="29" severity="warning" message="Parameter dm should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\dto\IdDto.java">
 <error line="7" column="10" severity="warning" message="Variable &apos;id&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
@@ -101,8 +103,9 @@
 <error line="11" column="38" severity="warning" message="Parameter resource should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\MeasurementController.java">
-<error line="17" column="39" severity="warning" message="Variable &apos;measurementServiceImplementation&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="18" column="5" severity="warning" message="Method &apos;getmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="10" column="8" severity="warning" message="Unused import - ro.tuc.ds2022.services.implementation.MeasurementServiceImplementation." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="18" column="24" severity="warning" message="Variable &apos;measurementServiceImplementation&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="19" column="5" severity="warning" message="Method &apos;getmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\RestExceptionHandler.java">
 <error line="23" column="5" severity="warning" message="Method &apos;handleConstraintViolationException&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
@@ -118,36 +121,37 @@
 <error line="68" column="61" severity="warning" message="Parameter request should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\UserAccountController.java">
-<error line="24" column="38" severity="warning" message="Variable &apos;userServiceImplementation&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="26" column="5" severity="warning" message="Method &apos;postmethod&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="27" column="28" severity="warning" message="Parameter ua should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="32" column="5" severity="warning" message="Method &apos;postmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="33" column="29" severity="warning" message="Parameter ua should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="41" column="5" severity="warning" message="Method &apos;getmethod&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="42" column="34" severity="warning" message="Parameter Id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="42" column="65" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
-<error line="52" column="5" severity="warning" message="Method &apos;getmethod&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="53" column="34" severity="warning" message="Parameter username should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="58" column="5" severity="warning" message="Method &apos;getmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="69" column="5" severity="warning" message="Method &apos;test&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="83" column="5" severity="warning" message="Method &apos;postmethod3&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="84" column="39" severity="warning" message="Parameter loginDto should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="100" column="5" severity="warning" message="Method &apos;postmethod4&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="101" column="30" severity="warning" message="Parameter id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="107" column="5" severity="warning" message="Method &apos;postmethod5&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="108" column="37" severity="warning" message="Parameter Id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="108" column="55" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
-<error line="114" column="5" severity="warning" message="Method &apos;resetPassword&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="115" column="41" severity="warning" message="Parameter auth should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="118" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="120" severity="warning" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="124" column="5" severity="warning" message="Method &apos;resetPassword&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="125" column="42" severity="warning" message="Parameter id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="125" column="71" severity="warning" message="Parameter reset should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="128" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="131" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
-<error line="131" column="19" severity="warning" message="&apos;-2&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="133" severity="warning" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="16" column="8" severity="warning" message="Unused import - ro.tuc.ds2022.services.implementation.UserServiceImplementation." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="25" column="31" severity="warning" message="Variable &apos;userServiceImplementation&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="27" column="5" severity="warning" message="Method &apos;postmethod&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="28" column="28" severity="warning" message="Parameter ua should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="33" column="5" severity="warning" message="Method &apos;postmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="34" column="29" severity="warning" message="Parameter ua should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="42" column="5" severity="warning" message="Method &apos;getmethod&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="43" column="34" severity="warning" message="Parameter Id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="43" column="65" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="53" column="5" severity="warning" message="Method &apos;getmethod&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="54" column="34" severity="warning" message="Parameter username should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="59" column="5" severity="warning" message="Method &apos;getmethod2&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="70" column="5" severity="warning" message="Method &apos;test&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="84" column="5" severity="warning" message="Method &apos;postmethod3&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="85" column="39" severity="warning" message="Parameter loginDto should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="101" column="5" severity="warning" message="Method &apos;postmethod4&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="102" column="30" severity="warning" message="Parameter id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="108" column="5" severity="warning" message="Method &apos;postmethod5&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="109" column="37" severity="warning" message="Parameter Id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="109" column="55" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="115" column="5" severity="warning" message="Method &apos;resetPassword&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="116" column="41" severity="warning" message="Parameter auth should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="119" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="121" severity="warning" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="125" column="5" severity="warning" message="Method &apos;resetPassword&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="126" column="42" severity="warning" message="Parameter id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="126" column="71" severity="warning" message="Parameter reset should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="129" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="132" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="132" column="19" severity="warning" message="&apos;-2&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="134" severity="warning" message="&apos;else&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\Ds2022Application.java">
 <error line="14" column="5" severity="warning" message="Method &apos;configure&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
@@ -160,8 +164,6 @@
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\Role.java">
 <error line="12" column="18" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
-</file>
-<file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\RoleType.java">
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\UserAccount.java">
 <error line="22" column="18" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
@@ -179,6 +181,15 @@
 <error line="12" column="48" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
 <error line="13" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
 <error line="14" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\DeviceService.java">
+<error line="9" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="10" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="12" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="14" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="14" column="35" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="16" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="18" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\DeviceServiceImplementation.java">
 <error line="16" column="29" severity="warning" message="Variable &apos;deviceRepository&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
@@ -201,32 +212,30 @@
 <error line="60" column="32" severity="warning" message="Parameter dev should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="60" column="41" severity="warning" message="Parameter m should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
-<file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\MailSender.java">
-<error line="16" column="23" severity="warning" message="Parameter emailSender should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="16" column="38" severity="warning" message="&apos;emailSender&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
-<error line="20" column="5" severity="warning" message="Method &apos;sendSimpleMessage&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="21" column="13" severity="warning" message="Parameter to should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="21" column="25" severity="warning" message="Parameter subject should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="21" column="41" severity="warning" message="Parameter text should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\MailSenderImplementation.java">
+<error line="17" column="37" severity="warning" message="Parameter emailSender should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="17" column="52" severity="warning" message="&apos;emailSender&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="21" column="5" severity="warning" message="Method &apos;sendSimpleMessage&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="22" column="13" severity="warning" message="Parameter to should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="22" column="25" severity="warning" message="Parameter subject should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="22" column="41" severity="warning" message="Parameter text should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\MappingServiceImplementation.java">
-<error line="15" column="27" severity="warning" message="Variable &apos;userRepository&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="18" column="29" severity="warning" message="Variable &apos;deviceRepository&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="21" column="5" severity="warning" message="Method &apos;addDeviceToUser&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="21" column="33" severity="warning" message="Parameter userId should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="21" column="46" severity="warning" message="Parameter deviceId should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="23" column="9" severity="warning" message="Avoid nested blocks." source="com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"/>
-<error line="29" column="5" severity="warning" message="Method &apos;deletedevice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="29" column="30" severity="warning" message="Parameter ua should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="29" column="39" severity="warning" message="Parameter dev should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="47" column="9" severity="warning" message="Avoid nested blocks." source="com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"/>
-<error line="58" column="27" severity="warning" message="Empty statement." source="com.puppycrawl.tools.checkstyle.checks.coding.EmptyStatementCheck"/>
+<error line="16" column="27" severity="warning" message="Variable &apos;userRepository&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="19" column="29" severity="warning" message="Variable &apos;deviceRepository&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="22" column="5" severity="warning" message="Method &apos;addDeviceToUser&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="22" column="33" severity="warning" message="Parameter userId should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="22" column="46" severity="warning" message="Parameter deviceId should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="24" column="9" severity="warning" message="Avoid nested blocks." source="com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"/>
+<error line="30" column="5" severity="warning" message="Method &apos;deletedevice&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="30" column="30" severity="warning" message="Parameter ua should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="30" column="39" severity="warning" message="Parameter dev should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="48" column="9" severity="warning" message="Avoid nested blocks." source="com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"/>
+<error line="59" column="27" severity="warning" message="Empty statement." source="com.puppycrawl.tools.checkstyle.checks.coding.EmptyStatementCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\MeasurementServiceImplementation.java">
 <error line="14" column="34" severity="warning" message="Variable &apos;measurementRepository&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="16" column="5" severity="warning" message="Method &apos;createMeasurement&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="16" column="43" severity="warning" message="Parameter mpud should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="21" column="5" severity="warning" message="Method &apos;readMeasurements&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="16" column="5" severity="warning" message="Method &apos;readMeasurements&apos; is not designed for extension - needs to be abstract, final or empty." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
 </file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\UserServiceImplementation.java">
 <error line="20" column="27" severity="warning" message="Variable &apos;userRepository&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
@@ -265,8 +274,31 @@
 <error line="168" column="41" severity="warning" message="Parameter reset should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="176" column="24" severity="warning" message="&apos;-2&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
+<file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\MailSender.java">
+<error line="4" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\MappingService.java">
+<error line="4" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="5" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
+<file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\MeasurementService.java">
+<error line="8" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+</file>
 <file name="C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\UserAccountService.java">
-<error line="6" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
-<error line="6" column="43" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="12" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="12" column="43" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="13" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="14" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="15" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="16" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="16" column="33" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="17" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="18" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="19" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="20" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="20" column="45" severity="warning" message="Name &apos;Id&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
+<error line="21" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
+<error line="21" column="16" severity="warning" message="Name &apos;SendRequestMail&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="22" column="5" severity="warning" message="Redundant &apos;public&apos; modifier." source="com.puppycrawl.tools.checkstyle.checks.modifier.RedundantModifierCheck"/>
 </file>
 </checkstyle>

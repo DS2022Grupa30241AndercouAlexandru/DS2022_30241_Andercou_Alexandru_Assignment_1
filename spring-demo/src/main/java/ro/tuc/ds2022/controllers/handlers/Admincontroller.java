@@ -3,13 +3,14 @@ package ro.tuc.ds2022.controllers.handlers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ro.tuc.ds2022.controllers.handlers.dto.MappingDto;
+import ro.tuc.ds2022.services.MappingService;
 import ro.tuc.ds2022.services.implementation.MappingServiceImplementation;
 
 @RestController
 @CrossOrigin(origins = "*",methods = { RequestMethod.GET ,RequestMethod.POST }, allowedHeaders = "*")
 public class Admincontroller {
     @Autowired
-    MappingServiceImplementation mappingService;
+    MappingService mappingService;
 
     @PostMapping("/addDeviceToUser")
     public void postmethod2(@RequestBody MappingDto md)

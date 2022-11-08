@@ -153,7 +153,7 @@ public class UserServiceImplementation implements UserAccountService {
       public int SendRequestMail(String auth) {
           System.out.println("Trimit acum mesaj");
           try {
-              MailSender ms = new MailSender(sender);
+              MailSenderImplementation ms = new MailSenderImplementation(sender);
             UUID seed=new UUID((long)(Math.random()*255),(long)(Math.random()*255));
 
              Seeds.add(seed);

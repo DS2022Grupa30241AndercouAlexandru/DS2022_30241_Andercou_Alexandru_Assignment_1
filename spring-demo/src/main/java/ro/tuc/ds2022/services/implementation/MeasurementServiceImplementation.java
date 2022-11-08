@@ -13,11 +13,6 @@ public class MeasurementServiceImplementation implements MeasurementService {
     @Autowired
     public MeasurementRepository measurementRepository;
 
-    public Measurement createMeasurement( Measurement mpud)
-    {
-
-        return  measurementRepository.save(mpud);
-    }
     public List<Measurement> readMeasurements()
     {
 

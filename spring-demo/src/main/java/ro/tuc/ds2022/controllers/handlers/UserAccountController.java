@@ -12,6 +12,7 @@ import ro.tuc.ds2022.controllers.handlers.dto.LoginDto;
 import ro.tuc.ds2022.controllers.handlers.dto.ResetDto;
 import ro.tuc.ds2022.entities.Device;
 import ro.tuc.ds2022.entities.UserAccount;
+import ro.tuc.ds2022.services.UserAccountService;
 import ro.tuc.ds2022.services.implementation.UserServiceImplementation;
 
 import java.util.List;
@@ -21,7 +22,7 @@ import java.util.UUID;
 @CrossOrigin(origins = "*",methods = { RequestMethod.GET ,RequestMethod.POST }, allowedHeaders = "*")
 public class UserAccountController {
     @Autowired
-    public UserServiceImplementation userServiceImplementation;
+    public UserAccountService userServiceImplementation;
 
     @PostMapping("/insertUser")
     public void postmethod(@RequestBody UserAccount ua)

@@ -1,4 +1,3 @@
-ro\tuc\ds2022\services\implementation\MailSender.class
 ro\tuc\ds2022\repositories\UserRepository.class
 ro\tuc\ds2022\entities\Measurement.class
 ro\tuc\ds2022\services\UserAccountService.class
@@ -15,6 +14,7 @@ ro\tuc\ds2022\controllers\handlers\exceptions\model\EntityValidationException.cl
 ro\tuc\ds2022\entities\Device.class
 ro\tuc\ds2022\repositories\MeasurementRepository.class
 ro\tuc\ds2022\controllers\handlers\exceptions\model\CustomException.class
+ro\tuc\ds2022\services\implementation\MailSenderImplementation.class
 ro\tuc\ds2022\controllers\handlers\RestExceptionHandler.class
 ro\tuc\ds2022\services\implementation\DeviceServiceImplementation.class
 ro\tuc\ds2022\controllers\handlers\dto\MappingDto2.class
@@ -34,3 +34,5 @@ ro\tuc\ds2022\controllers\handlers\exceptions\model\ParameterValidationException
 ro\tuc\ds2022\services\implementation\MappingServiceImplementation.class
 ro\tuc\ds2022\entities\RoleType.class
 ro\tuc\ds2022\Ds2022Application.class
+ro\tuc\ds2022\services\MappingService.class
+ro\tuc\ds2022\services\MailSender.class

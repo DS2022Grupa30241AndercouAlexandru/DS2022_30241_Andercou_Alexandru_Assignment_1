@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import ro.tuc.ds2022.controllers.handlers.dto.DeviceMeasurementDto;
 import ro.tuc.ds2022.entities.Device;
 import ro.tuc.ds2022.entities.Measurement;
+import ro.tuc.ds2022.services.DeviceService;
 import ro.tuc.ds2022.services.implementation.DeviceServiceImplementation;
 
 import java.sql.Date;
@@ -16,7 +17,7 @@ import java.util.List;
 @CrossOrigin(origins = "*",methods = { RequestMethod.GET ,RequestMethod.POST }, allowedHeaders = "*")
 public class DeviceController {
     @Autowired
-    public DeviceServiceImplementation deviceServiceImplementation;
+    public DeviceService deviceServiceImplementation;
 
 
     @PostMapping("/insertDevice")

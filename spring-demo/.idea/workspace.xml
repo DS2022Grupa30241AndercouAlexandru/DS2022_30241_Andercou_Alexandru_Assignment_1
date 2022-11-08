@@ -5,11 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41508b3d-0bcf-4778-80e0-369cb9b3012c" name="Changes" comment="com">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/MailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/MappingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../energy-utility-platform_angular3/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-utility-platform_angular3/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/Admincontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/Admincontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/DeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/DeviceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/MeasurementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/MeasurementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/UserAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/UserAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/DeviceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/MeasurementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/MeasurementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/UserAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/UserAccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/implementation/MailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/implementation/MailSenderImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/implementation/MappingServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/implementation/MappingServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/implementation/MeasurementServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/implementation/MeasurementServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/implementation/UserServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/services/implementation/UserServiceImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/checkstyle-cachefile" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkstyle-cachefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/checkstyle-result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/checkstyle-result.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/controllers/handlers/Admincontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/controllers/handlers/Admincontroller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/controllers/handlers/DeviceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/controllers/handlers/DeviceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/controllers/handlers/MeasurementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/controllers/handlers/MeasurementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/controllers/handlers/UserAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/controllers/handlers/UserAccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/DeviceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/DeviceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/MeasurementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/MeasurementService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/UserAccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/UserAccountService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/implementation/MailSender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/implementation/MappingServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/implementation/MappingServiceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/implementation/MeasurementServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/implementation/MeasurementServiceImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/implementation/UserServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ro/tuc/ds2022/services/implementation/UserServiceImplementation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ds-2022-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ds-2022-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ds-2022-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/ds-2022-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +46,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -150,6 +177,8 @@
       <workItem from="1667689803528" duration="2388000" />
       <workItem from="1667693265618" duration="2104000" />
       <workItem from="1667754609288" duration="881000" />
+      <workItem from="1667909862436" duration="7000" />
+      <workItem from="1667909928281" duration="1384000" />
     </task>
     <servers />
   </component>
