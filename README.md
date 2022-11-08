@@ -26,8 +26,9 @@ Baza de date postgreeSQL e pe portul 5431, user_name:postgres, parola:1234,
 
 
 Docker
+
 O alta metoda de rulare a aplicatiei este folosind docker. 
-Pentru a crea containerele docker , se merge in folserele root ale aplicatilor  java si angular
+Pentru a crea containerele docker , se merge in folderele energy-utility-platform_angular3 si spring-demo
 si se foloseste din terminal  comanda docker build .
 Care genereaza o imagine din fisierul Dockerfile. 
 Pentru a crea si a porni un container se foloseste comanda docker-compose up –d care genereaza un container folosind fisierul docker-compose.yml  
