@@ -9,6 +9,7 @@ C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tu
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\MeasurementServiceImplementation.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\MappingServiceImplementation.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\exceptions\model\ExceptionHandlerResponseDTO.java
+C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\MappingService.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\UserAccountController.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\repositories\MeasurementRepository.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\UserAccount.java
@@ -18,7 +19,6 @@ C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tu
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\dto\IdDto.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\UserServiceImplementation.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\dto\MappingDto2.java
-C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\MailSender.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\Measurement.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\RestExceptionHandler.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\Admincontroller.java
@@ -29,7 +29,9 @@ C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tu
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\DeviceService.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\exceptions\model\DuplicateResourceException.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\Role.java
+C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\MailSender.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\controllers\handlers\dto\ResetDto.java
+C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\implementation\MailSenderImplementation.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\services\MeasurementService.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\entities\RoleType.java
 C:\Users\Alexandru Andercou\Desktop\AssigmnentSD\spring-demo\src\main\java\ro\tuc\ds2022\repositories\RoleRepository.java
