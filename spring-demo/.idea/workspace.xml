@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecded0bb-035d-494e-bf41-1597c4e5eda3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Documentatie.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energy-utility-platform_angular3/dist/energy-utility-platform/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-utility-platform_angular3/dist/energy-utility-platform/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energy-utility-platform_angular3/dist/energy-utility-platform/main.377d978eb52955e9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energy-utility-platform_angular3/src/app/admin-page/admin-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-utility-platform_angular3/src/app/admin-page/admin-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-    </list>
+    <list default="true" id="ecded0bb-035d-494e-bf41-1597c4e5eda3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
