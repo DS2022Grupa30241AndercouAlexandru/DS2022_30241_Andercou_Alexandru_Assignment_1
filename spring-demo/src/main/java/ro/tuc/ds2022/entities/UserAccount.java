@@ -24,7 +24,7 @@ public class UserAccount {
     @OneToOne(fetch= FetchType.EAGER)
     private Role role;
     @OneToMany(fetch= FetchType.EAGER)
-    @JoinColumn(name="id_user")
+    @JoinColumn(name="owner")
     private List<Device> devices;
 
 }

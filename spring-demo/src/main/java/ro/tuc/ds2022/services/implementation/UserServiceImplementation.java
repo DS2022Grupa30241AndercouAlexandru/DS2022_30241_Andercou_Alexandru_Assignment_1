@@ -8,6 +8,7 @@ import ro.tuc.ds2022.controllers.handlers.dto.ResetDto;
 import ro.tuc.ds2022.entities.Device;
 import ro.tuc.ds2022.entities.Role;
 import ro.tuc.ds2022.entities.UserAccount;
+import ro.tuc.ds2022.repositories.DeviceRepository;
 import ro.tuc.ds2022.repositories.RoleRepository;
 import ro.tuc.ds2022.repositories.UserRepository;
 import ro.tuc.ds2022.services.UserAccountService;
@@ -20,6 +21,9 @@ public class UserServiceImplementation implements UserAccountService {
     public UserRepository userRepository;
     @Autowired
     public RoleRepository roleRepository;
+
+    @Autowired
+    public DeviceRepository deviceRepository;
     @Autowired
     public JavaMailSender sender;
 
@@ -142,10 +146,11 @@ public class UserServiceImplementation implements UserAccountService {
     }
     public List<Device> devicesForUser(Long Id)
     {
-        UserAccount ua1 = userRepository.findById(Id).get();
-        if (ua1 != null) {
+        List<Device> devices=(List<Device>) deviceRepository.findDevicesByOwner(Id);
 
-            return ua1.getDevices();
+        if (devices != null) {
+
+            return devices;
         }
         return null;
     }

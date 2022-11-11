@@ -9,7 +9,7 @@ import java.util.List;
 @Entity
 @Data
 public class Device {
-    Device()
+   public Device()
     {
 
         measurements=new ArrayList<Measurement>();
@@ -22,7 +22,8 @@ public class Device {
     private String description;
     private String address;
     private Float maximumHourlyEnergyConsumption;
+    private Long owner;
     @OneToMany(fetch= FetchType.EAGER)
-    @JoinColumn(name="id_device")
+    @JoinColumn(name="owner")
     private List<Measurement> measurements;
 }

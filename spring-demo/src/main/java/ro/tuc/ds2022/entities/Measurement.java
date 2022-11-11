@@ -17,6 +17,7 @@ public class Measurement {
     private Time time;
     private Float EnergyConsumption;
     private String UnityOfMeasurement;
+    private Long owner;
 
 
 }

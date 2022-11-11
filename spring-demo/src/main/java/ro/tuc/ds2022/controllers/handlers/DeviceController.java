@@ -3,6 +3,7 @@ package ro.tuc.ds2022.controllers.handlers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ro.tuc.ds2022.controllers.handlers.dto.DeviceMeasurementDto;
+import ro.tuc.ds2022.controllers.handlers.dto.Devicedto;
 import ro.tuc.ds2022.entities.Device;
 import ro.tuc.ds2022.entities.Measurement;
 import ro.tuc.ds2022.services.DeviceService;
@@ -21,21 +22,43 @@ public class DeviceController {
 
 
     @PostMapping("/insertDevice")
-    public void postmethod2(@RequestBody Device device) {
-        deviceServiceImplementation.createDevice(device);
+    public void postmethod2(@RequestBody Devicedto device) {
+
+        Device d=new Device();
+        d.setId(device.getId());
+        d.setName(device.getName());
+        d.setAddress(device.getAddress());
+        d.setDescription(device.getDescription());
+        d.setMeasurements(device.getMeasurements());
+        d.setMaximumHourlyEnergyConsumption(device.getMaximumHourlyEnergyConsumption());
+        deviceServiceImplementation.createDevice(d);
 
 
     }
 
     @PostMapping("/deleteDevice")
-    public void postmethod3(@RequestBody Device device) {
-        deviceServiceImplementation.deleteDevice(device);
+    public void postmethod3(@RequestBody Devicedto device) {
+        Device d=new Device();
+        d.setId(device.getId());
+        d.setName(device.getName());
+        d.setAddress(device.getAddress());
+        d.setDescription(device.getDescription());
+        d.setMeasurements(device.getMeasurements());
+        d.setMaximumHourlyEnergyConsumption(device.getMaximumHourlyEnergyConsumption());
+        deviceServiceImplementation.deleteDevice(d);
 
     }
 
     @PostMapping("/updateDevice")
-    public void postmethod4(@RequestBody Device device) {
-        deviceServiceImplementation.updateDevice(device);
+    public void postmethod4(@RequestBody Devicedto device) {
+        Device d=new Device();
+        d.setId(device.getId());
+        d.setName(device.getName());
+        d.setAddress(device.getAddress());
+        d.setDescription(device.getDescription());
+        d.setMeasurements(device.getMeasurements());
+        d.setMaximumHourlyEnergyConsumption(device.getMaximumHourlyEnergyConsumption());
+        deviceServiceImplementation.updateDevice(d);
 
     }
 

@@ -321,7 +321,7 @@ export class AdminPageComponent implements OnInit {
       timestamp: timedate,
       energyCon: energy,
       unityOfM: symbol,
-      id_device:measureForm.controls["dev"].value
+      owner:measureForm.controls["dev"].value
 
     }
 
