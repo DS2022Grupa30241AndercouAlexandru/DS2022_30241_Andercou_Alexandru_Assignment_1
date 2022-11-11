@@ -100,9 +100,9 @@ ALTER TABLE public.user_account OWNER TO postgres;
 COPY public.device (id, address, description, maximum_hourly_energy_consumption, name, owner) FROM stdin;
 42	strada Govora 18	an electronic multimeter	120	multimeter50x3	34
 37	Strada Richerdson nr 33	Smart Phone for rich people	100	Iphone 13	41
-44	Strada Observatorului nr 54	Samsung smart phone	100	Galaxy a03	34
 43	Strada Careiuluio 32	masina de spalat inteligenta	300	Philips	41
 79	Strada Richerdson nr 33	black smart and big	60	Samsung A13	36
+44	Strada Observatorului nr 54	Samsung smart phone	100	Galaxy A03	34
 \.
 
 
@@ -150,8 +150,8 @@ COPY public.user_account (id, name, role_id) FROM stdin;
 36	Matei Turcu	35
 41	Marius Pop	40
 52	Andercou Alexandru-Stefan	51
-34	Andercou Alexandru	33
 58	Mircea Radu	57
+34	Andercou Alexandru	33
 \.
 
 
@@ -159,7 +159,7 @@ COPY public.user_account (id, name, role_id) FROM stdin;
 -- Name: hibernate_sequence; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.hibernate_sequence', 79, true);
+SELECT pg_catalog.setval('public.hibernate_sequence', 80, true);
 
 
 --

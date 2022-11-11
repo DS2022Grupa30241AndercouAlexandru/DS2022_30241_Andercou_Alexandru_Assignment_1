@@ -275,7 +275,11 @@ export class AdminPageComponent implements OnInit {
       }
     }
     console.log("user", user);
-    this.httpc.post(this.url1, user).subscribe((response) => console.log(response));
+    this.httpc.post(this.url1, user).subscribe(response=>{
+      alert("New user added  in database");
+   
+   
+   },error=>alert("Couldn't create  User"))
 
   }
 
@@ -292,7 +296,11 @@ export class AdminPageComponent implements OnInit {
       maximumHourlyEnergyConsumption: deviceForm.controls["maxCon"].value,
     }
     console.log("device", device);
-    this.httpc.post(this.url2, device).subscribe((response) => console.log(response));
+    this.httpc.post(this.url2, device).subscribe(response=>{
+      alert("New device added  in database");
+   
+   
+   },error=>alert("Couldn't create  devivce"))
 
   }
   addMapping(mapForm: any) {
@@ -304,8 +312,11 @@ export class AdminPageComponent implements OnInit {
 
     }
     console.log("device-user", deviceuser);
-    this.httpc.post(this.url3, deviceuser).subscribe((response) => console.log(response));
-
+    this.httpc.post(this.url3, deviceuser).subscribe(response=>{
+      alert("New mapping added  in database");
+   
+   
+   },error=>alert("Couldn't create  mapping"))
   }
 
 
@@ -330,7 +341,11 @@ export class AdminPageComponent implements OnInit {
     console.log("body", body);
 
 
-    this.httpc.post(this.url7, body).subscribe((response) => console.log(response));
+    this.httpc.post(this.url7, body).subscribe(response=>{
+      alert("New measurement added  in database");
+   
+   
+   },error=>alert("Couldn't create measurement"))
 
   }
 
@@ -428,7 +443,7 @@ export class AdminPageComponent implements OnInit {
     }
 
 
-
+    var bool1=false;
     for (let map of this.mappings) {
       console.log("map:", map)
     
@@ -439,6 +454,7 @@ export class AdminPageComponent implements OnInit {
         if (map["userId"] == Number(val2.value) && map["deviceId"] == Number(val.value))
          
         {
+          bool1=true;
           this.map_search=map;
           console.log("map search while search",map);
         for (let [key, value] of Object.entries(map)) {
@@ -460,8 +476,10 @@ export class AdminPageComponent implements OnInit {
     }
   }
 
-    }
 
+    }
+    if(bool1==false)
+       alert("Couldn't find mapping")
 
 
   }
@@ -616,7 +634,11 @@ export class AdminPageComponent implements OnInit {
 
 
          console.log("updated user",this.user_search);
-   this.httpc.post(this.url10, this.user_search).subscribe();
+   this.httpc.post(this.url10, this.user_search).subscribe(response=>{
+    alert("User updated succesfully");
+ 
+ 
+ },error=>alert("Couldn't update  user"))
   
 
 
@@ -639,13 +661,17 @@ inp3=document.getElementsByClassName("device_address")[0]
 if(inp3 && inp3 instanceof HTMLInputElement)
 this.device_search.address=inp3.value
 
-inp4=document.getElementsByClassName("device_address")[0]
+inp4=document.getElementsByClassName("MHS")[0]
 if(inp4 && inp4 instanceof HTMLInputElement)
 this.device_search.maximumHourlyEnergyConsumption=inp4.value;
 
     
 console.log("updated device",this.device_search);
-this.httpc.post(this.url11, this.device_search).subscribe(response=>console.log("response"));
+this.httpc.post(this.url11, this.device_search).subscribe(response=>{
+   alert("Device updated succesfully");
+
+
+},error=>alert("Couldn't update Device"))
 
 
 
@@ -655,7 +681,11 @@ this.httpc.post(this.url11, this.device_search).subscribe(response=>console.log(
     var data_to_send = { "id": this.user_search.id };
     console.log("data to send", data_to_send);
 
-    this.httpc.post(this.url8, data_to_send).subscribe();
+    this.httpc.post(this.url8, data_to_send).subscribe(response=>{
+      alert("Deleted user succesfully");
+   
+   
+   },error=>alert("Couldn't delete  User"))
   }
   deleteDevice() {
 
@@ -663,7 +693,11 @@ this.httpc.post(this.url11, this.device_search).subscribe(response=>console.log(
     var data_to_send = { "id": this.device_search.id };
     console.log("data to send", data_to_send);
 
-    this.httpc.post(this.url9, data_to_send).subscribe();
+    this.httpc.post(this.url9, data_to_send).subscribe(response=>{
+      alert("Deleted device succesfully");
+   
+   
+   },error=>alert("Couldn't delete  device"))
   }
 
   deleteMap() {
@@ -674,7 +708,11 @@ this.httpc.post(this.url11, this.device_search).subscribe(response=>console.log(
   };
     console.log("data to send", data_to_send);
 
-    this.httpc.post(this.url15, data_to_send).subscribe(response=>{console.log(response)});
+    this.httpc.post(this.url15, data_to_send).subscribe(response=>{
+      alert("Mapping device succesfully");
+   
+   
+   },error=>alert("Couldn't delete  mapping"))
   }
 
 
@@ -720,7 +758,7 @@ this.httpc.post(this.url11, this.device_search).subscribe(response=>console.log(
       this.renderUserAfterSearch(this.user_search);
 
 
-    })
+    },error=>alert("Couldn't find user"))
   }
   searchUserByName(id: number) {
 
@@ -733,7 +771,7 @@ this.httpc.post(this.url11, this.device_search).subscribe(response=>console.log(
       this.device_search = response;
       this.renderDeviceAfterSearch(this.device_search);
 
-    })
+    },error=>alert("Couldn't find device"))
   }
 
 
