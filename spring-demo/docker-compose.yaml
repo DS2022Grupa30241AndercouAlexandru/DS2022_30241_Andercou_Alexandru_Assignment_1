@@ -21,7 +21,7 @@ services:
       - DB_PORT=5432
       - DB_USER=postgres
       - DB_DBNAME=energy-db
-      - DB_IP=anything_goes-demo-db-1
+      - DB_IP=spring-demo-demo-db-1
     ports:
         - "8080:8080"
     depends_on:
