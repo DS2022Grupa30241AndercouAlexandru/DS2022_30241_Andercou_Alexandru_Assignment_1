@@ -31,6 +31,7 @@ button{
     height: 50px;
     border-radius: 5px 5px;
    }
+   
    input:hover
    {
     background-color:rgb(186, 222, 244);
@@ -48,6 +49,7 @@ a
     color:blue
 }
 body{
+    margin-top:40px;
     display:flex;
     align-items: center;
 }

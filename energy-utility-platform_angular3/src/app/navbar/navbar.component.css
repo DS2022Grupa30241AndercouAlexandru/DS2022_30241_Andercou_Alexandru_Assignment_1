@@ -5,11 +5,16 @@ nav{
     background-color: rgb(41, 99, 216);
     display:flex;
     justify-content: flex-end;
-    width:95.7vw;
+    width:99.3vw;
     margin-left:0px;
     margin-right:0px;
     margin-bottom:0px;
-
+    padding-right:10px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index: 2;
+ 
     }
     body{
 

@@ -115,7 +115,7 @@ position: fixed;
 background-color: aquamarine;
 margin:0;
 overflow:hidden;
-z-index:1;
+z-index:5;
 
 
 }
@@ -123,6 +123,7 @@ z-index:1;
 body{
 
     margin:0px 0px 0px 0px;
+    width:100vw;
 }
 
 .main 

@@ -56,6 +56,17 @@ export class LoginPageComponent implements OnInit {
 
       li.username=this.loginForm.get('username')?.value; 
       li.password=this.loginForm.get('password')?.value; 
+      var msg=document.getElementById("message");
+      var reg=/\s+/
+      if(msg!=null && (li.password=="" ||  li.username==""  || reg.test(li.password) || reg.test(li.username))  )
+{
+   msg.textContent="The fields can't be empty"
+   msg.classList.remove("hidden")
+   msg.classList.add("invalid")
+   return;
+}
+
+
       
       console.log("li is",li);
       this.httpc.post(this.url2,li).subscribe(data=>{

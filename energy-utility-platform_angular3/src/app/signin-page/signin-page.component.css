@@ -4,8 +4,9 @@
     display:none;
 }
 
-
-.valid
+label { margin-right:50px;
+        text-align: right;}
+#valid
 {
     color:green
 }
@@ -15,7 +16,9 @@
     color:red
 }
 body{
- margin:auto;
+    margin-left:40%;
+    margin-top: 50px;
+    
 }
 button{
     background-color: rgb(61, 51, 190);
@@ -25,6 +28,11 @@ button{
     border-radius: 5px 5px;
    }
 
+   input{
+    align-items: center;
+
+   
+   }
    input[type="submit"]
    {
 
@@ -38,17 +46,15 @@ button{
 
    }
    button:hover{
-    background-color: rgb(61, 51, 190);
-    color:rgb(184, 218, 238);
-    width: 100px ;
-    height: 50px;
-    border-radius: 5px 5px;
+    background-color: rgb(184, 218, 238);
+  
    }
    input:hover
    {
     background-color:rgb(186, 222, 244);
 
    }
+ 
 div
 {
   margin:auto;
@@ -62,4 +68,9 @@ a
 
     color:white;
     text-decoration:none
+}
+#errors
+{
+    color:red;
+
 }

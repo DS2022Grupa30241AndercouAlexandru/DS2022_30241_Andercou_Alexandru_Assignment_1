@@ -37,7 +37,29 @@ if( userForm.controls["role"].value=='Admin')
           
           } }
     console.log("user",user);
-     this.httpc.post(this.url1,user).subscribe((response)=>console.log(response));
+     this.httpc.post(this.url1,user).subscribe((response)=>{console.log(response)
+      var err= document.getElementById("errors");
+      var vld= document.getElementById("valid");
+
+
+     if(err && err instanceof HTMLParagraphElement &&  vld)
+     {
+      vld.textContent="Person was signed in succesfully"
+      err.textContent=""
+     }
+    
+    },errors=>
+{    
+     var err= document.getElementById("errors");
+     var vld= document.getElementById("valid");
+     if(err && err instanceof HTMLParagraphElement &&  vld)
+     {
+      
+      err.textContent="Erroare the sign in was not succesful"
+      vld.textContent=""
+     }
+
+});
 
   }
 }
