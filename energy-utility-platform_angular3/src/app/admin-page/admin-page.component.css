@@ -138,7 +138,7 @@ body{
 }
 .nav_open
 {    
-    width:77.25vw;
+    width:100vw;
     transform:translateX(175px);
 
     background-color:gainsboro
