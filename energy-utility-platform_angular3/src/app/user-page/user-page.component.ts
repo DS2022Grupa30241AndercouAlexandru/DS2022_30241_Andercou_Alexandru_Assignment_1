@@ -114,7 +114,7 @@ export class UserPageComponent implements OnInit {
       var labels:any=[];
      for(let device of devices )
      {      var dataValues:any=[ ] 
-            var label=device["name"]
+            var label=device["name"]+ " kW/h"
             
            console.log("DEVICE:",i,device);
            i=i+1
