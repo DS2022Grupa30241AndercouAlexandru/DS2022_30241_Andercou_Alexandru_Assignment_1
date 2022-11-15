@@ -80,13 +80,11 @@ public class DeviceController {
 
 
            Measurement m2=new Measurement();
-           Float r=Float.valueOf(dm.getM().getEnergyCon());
+           Float r=Float.valueOf(dm.getEnergyCon());
            m2.setEnergyConsumption(r);
-           m2.setUnityOfMeasurement(dm.getM().getUnityOfM());
-           m2.setId(dm.getM().getId());
-
-
-           Timestamp t=Timestamp.valueOf(dm.getM().getTimestamp()+":00");
+           m2.setUnityOfMeasurement("kW/h");
+           m2.setId(Long.valueOf(0));
+           Timestamp t=Timestamp.valueOf(dm.getTimestamp()+":00");
 
 
 
@@ -104,7 +102,7 @@ public class DeviceController {
            m2.setDate(dat);
 
            System.out.println("measurement:"+m2.getTime()+" "+m2.getDate());
-           deviceServiceImplementation.addMeasurement(dm.getD(),m2);
+           deviceServiceImplementation.addMeasurement(dm.getDevice_id(),m2);
 
     }
 }

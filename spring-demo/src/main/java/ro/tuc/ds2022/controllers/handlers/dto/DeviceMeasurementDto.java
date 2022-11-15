@@ -4,6 +4,8 @@ import lombok.Data;
 
 @Data
 public class DeviceMeasurementDto {
-    private Long d;
-    private MeasurementDto m;
+    private Long device_id;
+    private String timestamp;
+    private Long energyCon;
+
 }

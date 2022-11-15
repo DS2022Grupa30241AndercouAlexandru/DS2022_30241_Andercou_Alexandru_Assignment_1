@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { IfStmt } from '@angular/compiler';
+import { ElementSchemaRegistry, IfStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Subject } from 'rxjs/internal/Subject';
@@ -326,18 +326,8 @@ export class AdminPageComponent implements OnInit {
     var symbol = "KW/h"
 
 
-
-    var deviceuser = {
-      id: 0,
-      timestamp: timedate,
-      energyCon: energy,
-      unityOfM: symbol,
-      owner:measureForm.controls["dev"].value
-
-    }
-
-    console.log("device-user", deviceuser);
-    var body = { d: measureForm.controls["dev"].value, m: deviceuser }
+    var body = { device_id: measureForm.controls["dev"].value,energyCon:energy, timestamp:timedate }
+    console.log("device-user", body);
     console.log("body", body);
 
 

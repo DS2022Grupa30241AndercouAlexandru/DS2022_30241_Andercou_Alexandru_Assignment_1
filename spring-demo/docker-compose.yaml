@@ -1,16 +1,6 @@
 version: '3'
 
 services:
-  demo-db:
-    image: postgres:15.0
-    restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=1234
-      - POSTGRES_HOST_AUTH_METHOD=trust
-      - POSTGRES_DB=energy-db
-    ports:
-      - "5431:5431"
   demo-be:
     build: .
     image: spring_server4
@@ -24,8 +14,7 @@ services:
       - DB_IP=spring-demo-demo-db-1
     ports:
         - "8080:8080"
-    depends_on:
-         - demo-db
+   
 
 
    
