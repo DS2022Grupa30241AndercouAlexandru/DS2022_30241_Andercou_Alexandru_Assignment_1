@@ -37,6 +37,28 @@ if( userForm.controls["role"].value=='Admin')
           
           } }
     console.log("user",user);
+    var reg=/^s*$/ 
+    if(user.role.username=="" || reg.test(user.role.username))
+    if(user.role.password=="" || reg.test(user.role.password))
+    if(user.name=="" || reg.test(user.name))
+       {
+        alert("No field is allowed to  be empty")
+        var err= document.getElementById("errors");
+        var vld= document.getElementById("valid");
+        if(err && err instanceof HTMLParagraphElement &&  vld)
+        {
+         
+         err.textContent="No field is allowed to  be empty"
+         vld.textContent=""
+        }
+        return;
+       }
+
+
+
+
+
+
      this.httpc.post(this.url1,user).subscribe((response)=>{console.log(response)
       var err= document.getElementById("errors");
       var vld= document.getElementById("valid");
