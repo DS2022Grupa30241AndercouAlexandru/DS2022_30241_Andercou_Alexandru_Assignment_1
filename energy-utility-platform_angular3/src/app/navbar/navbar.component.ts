@@ -82,7 +82,7 @@ export class NavbarComponent implements OnInit {
   logoff()
   {
     sessionStorage.clear();
-    location.reload();
+   document.location.reload();
   }
 
 }

@@ -11,5 +11,10 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  contact(contactForm:any)
+  {
+   alert("Comment sent succesfully");
+  document.location.reload();
 
+  }
 }

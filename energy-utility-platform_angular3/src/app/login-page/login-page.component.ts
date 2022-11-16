@@ -48,7 +48,7 @@ export class LoginPageComponent implements OnInit {
   // }
   apelate_reload()
   {
-    location.reload();
+   document.location.reload();
   }
   login()
   { 

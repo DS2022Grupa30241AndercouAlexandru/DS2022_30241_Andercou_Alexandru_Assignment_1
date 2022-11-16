@@ -277,7 +277,7 @@ export class AdminPageComponent implements OnInit {
     console.log("user", user);
     this.httpc.post(this.url1, user).subscribe(response=>{
       alert("New user added  in database");
-   
+     document.location.reload()
    
    },error=>alert("Couldn't create  User"))
 
@@ -298,7 +298,7 @@ export class AdminPageComponent implements OnInit {
     console.log("device", device);
     this.httpc.post(this.url2, device).subscribe(response=>{
       alert("New device added  in database");
-   
+     document.location.reload()
    
    },error=>alert("Couldn't create  devivce"))
 
@@ -314,7 +314,7 @@ export class AdminPageComponent implements OnInit {
     console.log("device-user", deviceuser);
     this.httpc.post(this.url3, deviceuser).subscribe(response=>{
       alert("New mapping added  in database");
-   
+     document.location.reload()
    
    },error=>alert("Couldn't create  mapping"))
   }
@@ -333,7 +333,7 @@ export class AdminPageComponent implements OnInit {
 
     this.httpc.post(this.url7, body).subscribe(response=>{
       alert("New measurement added  in database");
-   
+    document.location.reload()
    
    },error=>alert("Couldn't create measurement"))
 
@@ -626,7 +626,7 @@ export class AdminPageComponent implements OnInit {
          console.log("updated user",this.user_search);
    this.httpc.post(this.url10, this.user_search).subscribe(response=>{
     alert("User updated succesfully");
- 
+  document.location.reload()
  
  },error=>alert("Couldn't update  user"))
   
@@ -659,7 +659,7 @@ this.device_search.maximumHourlyEnergyConsumption=inp4.value;
 console.log("updated device",this.device_search);
 this.httpc.post(this.url11, this.device_search).subscribe(response=>{
    alert("Device updated succesfully");
-
+   document.location.reload();
 
 },error=>alert("Couldn't update Device"))
 
@@ -673,7 +673,7 @@ this.httpc.post(this.url11, this.device_search).subscribe(response=>{
 
     this.httpc.post(this.url8, data_to_send).subscribe(response=>{
       alert("Deleted user succesfully");
-   
+     document.location.reload()
    
    },error=>alert("Couldn't delete  User"))
   }
@@ -685,7 +685,7 @@ this.httpc.post(this.url11, this.device_search).subscribe(response=>{
 
     this.httpc.post(this.url9, data_to_send).subscribe(response=>{
       alert("Deleted device succesfully");
-   
+      document.location.reload()
    
    },error=>alert("Couldn't delete  device"))
   }
@@ -700,7 +700,7 @@ this.httpc.post(this.url11, this.device_search).subscribe(response=>{
 
     this.httpc.post(this.url15, data_to_send).subscribe(response=>{
       alert("Mapping device succesfully");
-   
+     document.location.reload()
    
    },error=>alert("Couldn't delete  mapping"))
   }

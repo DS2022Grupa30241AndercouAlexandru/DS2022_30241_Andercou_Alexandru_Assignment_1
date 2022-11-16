@@ -12,7 +12,7 @@
 <div>
 <h2>Contact</h2>
 <p>If you want to find us please leave us your email and comment and we will contact you< as soon as possible</p>
-<form>
+<form #contactForm="ngForm" (ngSubmit)="contact(contactForm)" id="contactForm">
     <p>Name</p>
     <input type="text">
     <br>
@@ -26,7 +26,7 @@
     <textarea>
     </textarea> 
    <br>
-    <button>Submit </button>
+    <input type="submit" value="Submit"/>
 </form>
 
 
