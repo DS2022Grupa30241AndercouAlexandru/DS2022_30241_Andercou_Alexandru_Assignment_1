@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  demo-be:
+    build: .
+    image: spring_server4
+    restart: always
+    environment:
+      - TZ=UTC
+      - DB_PASSWORD=1234
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_DBNAME=energy-db
+      - DB_IP=spring-demo-demo-db-1
+    ports:
+        - "8080:8080"
+   
+
+
+   
+

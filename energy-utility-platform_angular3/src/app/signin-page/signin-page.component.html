@@ -1,0 +1,51 @@
+
+<html>
+
+<body>
+
+<H1>Welcome to EFPlatform sign In page</H1>
+<p id="errors"></p>
+<p id="valid"></p>
+<form #userForm="ngForm" (ngSubmit)="onFormSubmit(userForm)">
+<div>
+<input type="radio"  id="admin"   value="Admin" name="role" ngModel>
+<label>Admin</label>
+
+<br>
+<input type="radio"  id="user"   value="User" name="role" ngModel>
+<label >User</label>
+
+</div>
+<br>
+
+<label>First Name:</label>
+<input type="text" name="firstName" id="fn" ngModel>
+<br>
+<label >Last Name:</label>
+<input type="text" name="lastName" id="ln" ngModel>
+<br>
+
+<label >Username:</label>
+<input type="text" name="username"  id="username" ngModel>
+<br>
+
+
+<label >Password:</label>
+<input type="password" name="password" id="ps" ngModel>
+<br>
+
+<label > Check Password:</label>
+<input type="password" name="check_password" id="ps2" ngModel>
+<br>
+<br>
+
+
+<input type="submit" value="Sign In">
+
+<button><a routerLink="/login">Go to Login</a></button>
+
+</form>
+
+
+</body>
+</html>

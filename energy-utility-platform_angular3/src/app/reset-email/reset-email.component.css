@@ -1,0 +1,18 @@
+body{
+margin-top:50px;
+margin-left:40%;
+}
+button{
+    background-color: rgb(61, 51, 190);
+    color:white;
+    width: 100px ;
+    height: 50px;
+    border-radius: 5px 5px;
+   }
+   button:hover{
+    background-color: rgb(61, 51, 190);
+    color:rgb(184, 218, 238);
+    width: 100px ;
+    height: 50px;
+    border-radius: 5px 5px;
+   }

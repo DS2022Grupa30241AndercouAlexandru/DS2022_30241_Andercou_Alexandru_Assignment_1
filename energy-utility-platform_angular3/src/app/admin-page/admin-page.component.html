@@ -1,0 +1,425 @@
+<html>
+
+<body>
+    <nav id="navi">
+
+        <div  (click)="close_meniu()" id="buttons_meniu">
+
+            <i id="icn" class="fa fa-minus"></i>
+        </div>        
+        
+        <H3>Navigation </H3>
+      
+        
+        <a (click)="toUser()" class="jumper">Jump to Useri</a>
+        
+        
+
+        <br>
+        <a  (click)="toDevice()" class="jumper" >Jump to Devices</a>
+        <br>
+        <a (click)="toMap()"  class="jumper">Jump to Map</a>
+        <br>
+        <a (click)="toMeasure()"  class="jumper" >Jump to Measurements</a>
+        <br>
+        </nav>
+        
+<div id="main" class="main nav_open">
+<H1 id="Welcome">Dashbord </H1>
+<H2>Here you can manage all  important data,from users to  measurements</H2>
+
+
+
+
+<a name="user_section"></a>
+    <div name="user_section">
+        <h2>User</h2>
+        <div><button (click)="show_hide_user_form()" id="adu">Add new User</button> </div>
+
+
+        <form class="hidden" #userForm="ngForm" (ngSubmit)="addUser(userForm)" id="userForm">
+            <div>
+                <input type="radio" id="admin" value="Admin" name="role" ngModel>
+                <label for="admin">Admin</label>
+
+                <br>
+                <input type="radio" id="user" value="User" name="role" ngModel>
+                <label for="user">User</label>
+
+            </div>
+            <br>
+
+            <label for="fn">First Name:</label>
+            <input type="text" name="firstName" id="fn" ngModel>
+            <br>
+            <label for="ln">Last Name:</label>
+            <input type="text" name="lastName" id="ln" ngModel>
+            <br>
+
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" ngModel>
+            <br>
+
+
+            <label for="ps">Password:</label>
+            <input type="password" name="password" id="ps" ngModel>
+            <br>
+
+            <label for="ps2"> Check Password:</label>
+            <input type="password" name="check_password" id="ps2" ngModel>
+            <br>
+            <button>Submit New User</button>
+           
+        </form>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+
+
+        <div  id="user_section">
+            <label for="usearch">Search User By </label>>
+            <button>Id</button>
+            <input type="text" id="usearch">
+            <button (click)="searchUser()">Send</button>>
+            <br>
+
+            <label class="hidden" for="tbuid">User:</label>
+            <br>
+            <table  class="table  hidden" id="tbuid">
+                <thead>
+                 <tr>
+                    <th>Nume User</th>
+                    <th>Role type</th>
+                    <th>Username User</th>
+                    <th>User id</th>
+
+                 </tr>
+                 </thead>
+                 <tbody id="utb">
+
+
+                 </tbody>
+              
+            </table>
+            <button (click)="deleteUser()" class="action_button">Delete User</button> 
+            <button (click)="updateUser()" class="action_button">Update User</button> 
+            <br>
+
+
+
+            <label for="tbu">Useri:</label>
+            <br>
+            <table datatable [dtOptions]="dtOptions" [dtTrigger]="this.dtTrigger"  class="table table-bordered table-striped table-hover" id="tbu">
+                <thead>
+                <tr>
+                    <th>User id</th>
+                    <th>Role type</th>
+                    <th>Nume User</th>
+                    <th>Username User</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr *ngFor="let user of this.users">
+                    <td>{{ user.id }}</td>
+     
+                    <td>{{ user.role.type}}</td>
+     
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.role.username }}</td>
+                </tr>
+            </tbody>
+
+            </table>
+        </div>
+
+        
+
+    </div>
+    <br>
+    <div name="device_section" id="device_section">
+        <h2>Device</h2>
+        <div>
+            <button (click)="show_hide_device_form()" id="add">Add new Device</button>
+        </div>
+        <br>
+        <br>
+
+
+
+        <form class="hidden" #deviceForm="ngForm" (ngSubmit)="addDevice(deviceForm)" id="deviceForm">
+            <label for="devName">Name:</label>
+            <input type="text" name="name" id="devName" ngModel>
+            <br>
+            <label for="des">Description:</label>
+            <input type="text" name="description" id="des" ngModel>
+            <br>
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" ngModel>
+            <br>
+
+
+            <label for="MHS">Max kW/h Accepted:</label>
+            <input type="text" name="maxCon" id="MHS" ngModel>
+            <br>
+
+
+            <button>Submit New Device</button> 
+            <br>
+
+        </form>
+
+
+        <div>
+            <label for="dsearch">Search Device bY</label>>
+            <button>Id</button>
+            <input type="text" id="dsearch">
+            <button (click)="searchDevice()" >Send</button>
+
+        </div>
+        <br>
+        <table    class=" hidden table  table-bordered table-striped table-hover"id="tbduid">
+            <thead>
+            <tr>
+                <th>Device id</th>
+                <th>Nume device</th>
+                <th>Description Device</th>
+                <th>Adress of device</th>
+                <th>maximul hourly consumption</th>
+                <th>Average hourly consumption</th>
+            </tr>
+        </thead>
+        <tbody id="dtb">
+
+
+        </tbody>
+     
+
+        </table>
+
+
+      
+        <button  (click)="deleteDevice()">Delete Device</button>
+        <button  (click)="updateDevice()">Update Device</button>
+
+
+
+
+
+        <br>
+        <label for="tbd">Deviceuri:</label>
+        <br>
+        <table  datatable [dtOptions]="dtOptions" [dtTrigger]="this.dtTrigger2"  class="table table-bordered table-striped table-hover" id="tbd">
+            <thead>
+            <tr>
+                <th>Device id</th>
+                <th>Nume device</th>
+                <th>Description Device</th>
+                <th>Max hourly consum</th>
+                <th>Adress of device</th>
+            </tr>
+        </thead>
+        <tbody  >
+            <tr *ngFor="let device of this.devices">
+                <td>{{ device.id }}</td>
+ 
+                <td>{{ device.name}}</td>
+ 
+                <td>{{ device.description }}</td>
+                <td> {{ device.maximumHourlyEnergyConsumption }}</td>
+                <td> {{ device.address }}</td>
+
+
+            </tr>
+        </tbody>
+
+        </table>
+
+
+
+
+
+
+    </div>
+
+
+    <div name="mapping_section">
+        <h2>User Devices</h2>
+        <div><button (click)="show_hide_mapping_form()" class="action_button" >Add new Mapping</button> </div>
+
+        <form class="hidden" #mapForm="ngForm" (ngSubmit)="addMapping(mapForm)" id="mappingForm">
+            <label for="userId">Id User:</label>
+            <input type="text" name="user" id="userId" ngModel>
+            <br>
+            <label for="deviceId">Id Device:</label>
+            <input type="text" name="device" id="deviceId" ngModel>
+            <br>
+
+
+
+            <button>Submit New Mapping</button>
+            <br>
+        
+         </form>
+           <br>
+            <div><button (click)="deleteMap()" class="action_button">Delete Mapping</button> </div>
+
+
+            <div id="mapping_section">
+                <p>Search </p>
+                <label for="d2search">Choose Device By</label>>
+                <button>Id</button>
+                <input type="text" id="d2search">
+                <br>
+                <label for="u2search">Choose User By</label>>
+                <button>Id</button>
+                <input type="text" id="u2search">
+                <br>
+                <button (click)="searchMap()">Send</button>>
+                <br>
+                <label for="tbmid">Mapping:</label>
+                <br>
+                <table   class="hidden ntable table-bordered table-striped table-hover"  id="tbmid">
+                    <tr>
+                        <th>Device id</th>
+                        <th>User id</th>
+                        <th>User Name</th>
+                        <th>Device name</th>
+                        <th>Adress of device</th>
+                    </tr>
+                    <tbody id="mtb">
+
+
+
+                    </tbody>
+          
+
+              </table>
+
+
+                <br>
+                <label for="tbm">Mappings:</label>
+                <br>
+                <table  datatable [dtOptions]="dtOptions" [dtTrigger]="this.dtTrigger3"  class="table table-bordered table-striped table-hover" id="tbm">
+                   
+                   
+                   <thead>
+                    <tr>
+                        <th>Device id</th>
+                        <th>User id</th>
+                        <th>User Name</th>
+                        <th>Device name</th>
+                        <th>Adress of device</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr *ngFor="let map of this.mappings">
+                            <td>{{ map.deviceId }}</td>
+             
+                            <td>{{ map.userId}}</td>
+             
+                            <td>{{ map.userName }}</td>
+                            <td>{{ map.devicename }}</td>
+                            <td>{{ map.address }}</td>
+                         
+            
+            
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+      </div>
+
+
+
+
+
+    <br>
+    <div  name="measurement_section">
+        <h2>Measurement</h2>
+
+        <br>
+        <div>
+            <button (click)="show_hide_measure_form()" id="adm">Add Measurement</button>
+        </div>
+
+        <div id="measurement_section">
+            <form  #measureForm="ngForm" class="hidden" (ngSubmit)="addMeasure(measureForm)" id="measureForm">
+            <label for="d3search">Choose Device</label>>
+            <input type="text" id="d3search"  name="dev" ngModel >
+            <br>
+            <label for="measure">Energy consumption</label>>
+            <input type="text" id="measure"  name="engCon" ngModel >
+            <br>
+
+            <label for="data" >Date</label>
+            <input type="date" id="data" name="date" ngModel >
+            <br>
+            <label for="time" >Time</label>>
+            <input type="time" id="time"  name="hour"  ngModel >
+            <br>
+
+            <br>
+            <button >Send</button>>
+
+             </form>
+
+
+
+
+            <br>
+            <label for="tbmm">Masuratori:</label>
+            <table   datatable [dtOptions]="dtOptions" [dtTrigger]="this.dtTrigger4" class="table table-bordered table-striped table-hover" id="tbmm">
+               
+               <thead>
+                <tr>
+                <th>Measurement Id</th>
+                <th>Timestamp</th>
+                <th>EnergyConsumption</th>
+                <th>UnityOfMeasurement </th>
+               <th>Device Id</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let measure of this.measurements">
+                        <td>{{ measure.id }}</td>
+         
+                        <td>{{ measure.date+" "+measure.time}}</td>
+         
+                        <td>{{ measure.energyConsumption }}</td>
+                        <td>{{ measure.unityOfMeasurement }}</td>
+                        <td>{{ measure.owner}}</td>
+                     
+        
+        
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

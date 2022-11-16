@@ -1,0 +1,7 @@
+version: '3'
+services:
+
+  angular:
+   image: angular_client
+   ports:
+     - "4200:4200"
