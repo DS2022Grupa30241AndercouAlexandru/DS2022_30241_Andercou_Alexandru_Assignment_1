@@ -22,6 +22,24 @@ export class SigninPageComponent implements OnInit {
 
   var name=   userForm.controls["firstName"].value+" "+ userForm.controls["lastName"].value;
   var rol=0;
+
+  var reg=/\s*$/ 
+  if( userForm.controls["firstName"].value=="" || reg.test( userForm.controls["firstName"].value))
+  if( userForm.controls["lastName"].value=="" || reg.test( userForm.controls["lastName"].value))
+     {
+      alert("No field is allowed to  be empty")
+      var err= document.getElementById("errors");
+      var vld= document.getElementById("valid");
+      if(err && err instanceof HTMLParagraphElement &&  vld)
+      {
+       
+       err.textContent="No field is allowed to  be empty"
+       vld.textContent=""
+      }
+      return;
+     }
+
+
 if( userForm.controls["role"].value=='Admin')
        rol=0;
        else
@@ -37,10 +55,9 @@ if( userForm.controls["role"].value=='Admin')
           
           } }
     console.log("user",user);
-    var reg=/^s*$/ 
+    var reg=/\s*$/ 
     if(user.role.username=="" || reg.test(user.role.username))
     if(user.role.password=="" || reg.test(user.role.password))
-    if(user.name=="" || reg.test(user.name))
        {
         alert("No field is allowed to  be empty")
         var err= document.getElementById("errors");
