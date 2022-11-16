@@ -4,8 +4,9 @@
     display:none;
 }
 
-label { margin-right:50px;
-        text-align: right;}
+label { 
+        float:left
+        ;}
 #valid
 {
     color:green
@@ -28,11 +29,25 @@ button{
     border-radius: 5px 5px;
    }
 
-   input{
-    align-items: center;
+   input[type="text"] 
+   {
+    float:right
 
-   
+
    }
+   input[type="password"] 
+   {
+    float:right
+
+   }
+   input[type="radio"] 
+   {
+    float:right
+
+
+   }
+
+
    input[type="submit"]
    {
 
@@ -42,7 +57,7 @@ button{
     height: 50px;
     border-radius: 5px 5px;
     margin-right:20px;
-
+  
 
    }
    button:hover{
@@ -55,13 +70,7 @@ button{
 
    }
  
-div
-{
-  margin:auto;
 
-   
-    
-}
 a
 {
 
@@ -73,4 +82,15 @@ a
 {
     color:red;
 
+}
+
+form{
+
+    width:300px;
+}
+
+#usertype
+{
+
+    width:80px;
 }
