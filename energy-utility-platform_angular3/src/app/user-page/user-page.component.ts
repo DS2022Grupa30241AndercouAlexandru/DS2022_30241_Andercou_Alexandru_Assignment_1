@@ -109,7 +109,8 @@ export class UserPageComponent implements OnInit {
 
           let i=0;
           var canvas= document.getElementById("canvas");
-
+        
+        
 
      if(canvas && canvas instanceof HTMLCanvasElement)
      {
@@ -121,8 +122,9 @@ export class UserPageComponent implements OnInit {
       {     
             var  device=this.device_search;
             var dataValues:any=[ ] 
-            var label=device["name"]+ " kW/h"
+            var label="kW/h"
             
+
            console.log("DEVICE:",i,device);
            i=i+1
 
@@ -173,16 +175,46 @@ export class UserPageComponent implements OnInit {
                 datasets:dataSet,
                       
             },
+            plugins:[
+              {
+                id: "tooltipLine",
+                 afterDraw:chart=>
+                 {
+                  chart.ctx
+                 }
+
+              }
+            ]
+            ,
             options: {
+              plugins: {
+                
+                
+                legend: {
+                    display: true,
+                    position:'left',
+                    labels: {
+                        color: 'rgb(255, 99, 132)'
+                    }}
+                  },
                 scales: {
                     y: {
                         beginAtZero: true
                     }
                     
-                }
-            }
-        }
+                },
+            
+
+
+            },
+           
+            
+        },
+      
+
+
         );
+        ctx.fillText("Hours",canvas.getBoundingClientRect ().height/2+ 100,canvas.getBoundingClientRect ().height+20)
         
 
         
@@ -277,7 +309,7 @@ export class UserPageComponent implements OnInit {
     var val = document.getElementById("dsearch");
     if (val && val instanceof HTMLInputElement) {
       console.log("field is input");
-   
+ 
       this.searchDeviceById(Number(val.value))
     }
 
@@ -289,6 +321,9 @@ export class UserPageComponent implements OnInit {
     this.httpc.get(this.url13 + "/" + id).subscribe(response => {
       this.device_search = response;
       this.device_searched=true;
+      var dname= document.getElementById("devicename");
+      if(dname instanceof HTMLParagraphElement)
+            dname.textContent=this.device_search["name"]
       alert("Device: "+ this.device_search.name +" was found");
     },error=>alert("Couldn't find device"))
   }
