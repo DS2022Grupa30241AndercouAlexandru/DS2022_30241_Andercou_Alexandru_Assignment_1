@@ -84,10 +84,10 @@
 
 
         <div  id="user_section">
-            <label for="usearch">Search User By </label>>
+            <label for="usearch">Search User By </label>
             <button>Id</button>
             <input type="text" id="usearch">
-            <button (click)="searchUser()">Send</button>>
+            <button (click)="searchUser()">Send</button>
             <br>
 
             <label class="hidden" for="tbuid">User:</label>
@@ -178,7 +178,7 @@
 
 
         <div>
-            <label for="dsearch">Search Device bY</label>>
+            <label for="dsearch">Search Device By</label>
             <button>Id</button>
             <input type="text" id="dsearch">
             <button (click)="searchDevice()" >Send</button>
@@ -254,7 +254,7 @@
         <h2>User Devices</h2>
         <div><button (click)="show_hide_mapping_form()" class="action_button" >Add new Mapping</button> </div>
 
-        <form class="hidden" #mapForm="ngForm" (ngSubmit)="addMapping(mapForm)" id="mappingForm">
+        <form class="hidden" #mapForm="ngForm" (ngSubmit)= "addMapping(mapForm)" id="mappingForm">
             <label for="userId">Id User:</label>
             <input type="text" name="user" id="userId" ngModel>
             <br>
@@ -274,15 +274,15 @@
 
             <div id="mapping_section">
                 <p>Search </p>
-                <label for="d2search">Choose Device By</label>>
+                <label for="d2search">Choose Device By</label>
                 <button>Id</button>
                 <input type="text" id="d2search">
                 <br>
-                <label for="u2search">Choose User By</label>>
+                <label id="chu" for="u2search">Choose User By</label>
                 <button>Id</button>
                 <input type="text" id="u2search">
                 <br>
-                <button (click)="searchMap()">Send</button>>
+                <button (click)="searchMap()">Send</button>
                 <br>
                 <label for="tbmid">Mapping:</label>
                 <br>
@@ -343,32 +343,32 @@
 
 
     <br>
-    <div  name="measurement_section">
+    <div name="measurement_section" id="measurement_section" >
         <h2>Measurement</h2>
 
         <br>
         <div>
-            <button (click)="show_hide_measure_form()" id="adm">Add Measurement</button>
+            <button (click)= "show_hide_measure_form()" id="adm">Add Measurement</button>
         </div>
 
-        <div id="measurement_section">
-            <form  #measureForm="ngForm" class="hidden" (ngSubmit)="addMeasure(measureForm)" id="measureForm">
-            <label for="d3search">Choose Device</label>>
+        <div >
+            <form  #measureForm="ngForm" class="hidden" (ngSubmit)= "addMeasure(measureForm)" id="measureForm">
+            <label for="d3search">Choose Device</label>
             <input type="text" id="d3search"  name="dev" ngModel >
             <br>
-            <label for="measure">Energy consumption</label>>
+            <label for="measure">Energy consumption</label>
             <input type="text" id="measure"  name="engCon" ngModel >
             <br>
 
             <label for="data" >Date</label>
             <input type="date" id="data" name="date" ngModel >
             <br>
-            <label for="time" >Time</label>>
+            <label for="time" >Time</label>
             <input type="time" id="time"  name="hour"  ngModel >
             <br>
 
             <br>
-            <button >Send</button>>
+                <button >Send </button>
 
              </form>
 
@@ -377,19 +377,19 @@
 
             <br>
             <label for="tbmm">Masuratori:</label>
-            <table   datatable [dtOptions]="dtOptions" [dtTrigger]="this.dtTrigger4" class="table table-bordered table-striped table-hover" id="tbmm">
+            <table   datatable [dtOptions]= "dtOptions" [dtTrigger]= "this.dtTrigger4" class="table table-bordered table-striped table-hover" id="tbmm">
                
                <thead>
                 <tr>
                 <th>Measurement Id</th>
                 <th>Timestamp</th>
-                <th>EnergyConsumption</th>
-                <th>UnityOfMeasurement </th>
-               <th>Device Id</th>
+                <th>energy consumption</th>
+                <th>unity of measurement </th>
+                 <th>Device Id</th>
                 </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let measure of this.measurements">
+                    <tr *ngFor ="let measure of this.measurements">
                         <td>{{ measure.id }}</td>
          
                         <td>{{ measure.date+" "+measure.time}}</td>

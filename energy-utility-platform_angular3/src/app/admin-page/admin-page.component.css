@@ -38,7 +38,13 @@ background-color:rgb(166, 166, 225)
 }
 #measurement_section
 {
-    width:60vw;
+   width:60vw;
+}
+
+
+#measurement_section table
+{
+   width:60vw;
 }
 .table
 {    
@@ -84,13 +90,7 @@ button:hover{
     background-color:rgb(72, 115, 202);
     color:rgb(62, 207, 223)
 }
-body{
-     
-    margin-top:0px;
-    padding-top:0px;
-    width:100vw;
-   
-}
+
 
 .girl
 {
@@ -129,7 +129,7 @@ body{
 .main 
 {   
     
-     width: 89vw;
+     width: 100vw;
    
     background-color:gainsboro;
 
@@ -175,6 +175,7 @@ form{
 .nav_close
 {
     transform:translateX(-175px);
+   
 
 }
 thead
@@ -195,5 +196,11 @@ background-color:rgb(124, 22, 22)
 
 background-color: lightcoral;
 
+}
+
+#chu
+{
+
+    margin-right:15px;
 }
 
