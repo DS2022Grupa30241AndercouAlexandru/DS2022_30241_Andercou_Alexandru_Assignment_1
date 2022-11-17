@@ -277,7 +277,7 @@ export class UserPageComponent implements OnInit {
     var val = document.getElementById("dsearch");
     if (val && val instanceof HTMLInputElement) {
       console.log("field is input");
-
+   
       this.searchDeviceById(Number(val.value))
     }
 
@@ -288,59 +288,9 @@ export class UserPageComponent implements OnInit {
   searchDeviceById(id: number) {
     this.httpc.get(this.url13 + "/" + id).subscribe(response => {
       this.device_search = response;
-      this.renderDeviceAfterSearch(this.device_search);
       this.device_searched=true;
+      alert("Device: "+ this.device_search.name +" was found");
     },error=>alert("Couldn't find device"))
-  }
-
-  renderDeviceAfterSearch(user: any) {
-    var tb = document.getElementById("dtb")
-
-    var T = document.getElementById("tbduid")
-
-    if (tb) {
-      var childs = tb.children;
-      for (let i = childs.length - 1; i >= 0; i--) {
-        tb.removeChild(childs[i]);
-      }
-    }
-
-    var row = document.createElement("tr");
-     let i=0;
-    for (let [key, value] of Object.entries(user)) {
-      i++;
-     if(i<=5)
-     {
-      var elem = document.createElement("td");
-      var input = document.createElement("input");
-
-          if(key=='id')
-            {
-              input.disabled=true;
-        
-            }
-
-
-
-      if (value instanceof Array) {
-        input.value = ""
-      }
-      else
-      {
-        input.value = String(value)
-        input.className="device_"+key;
-      }
-        
-      elem.appendChild(input);
-      row.appendChild(elem);
-    }
-
-    }
-
-    if (tb)
-      tb.appendChild(row);
-    if (T)
-      T.classList.remove("hidden");
   }
 
 }
