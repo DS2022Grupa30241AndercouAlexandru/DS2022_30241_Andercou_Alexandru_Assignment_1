@@ -46,10 +46,7 @@ export class LoginPageComponent implements OnInit {
   //   return sessionStorage.getItem('role');
 
   // }
-  apelate_reload()
-  {
-   document.location.reload();
-  }
+
   login()
   { 
      var  li:LoginInfo={"username":"","password":""}
@@ -99,7 +96,7 @@ export class LoginPageComponent implements OnInit {
         if(usr["role"]["type"]=="USER")
         this.router.navigate(["/user"])
 
-          this.apelate_reload();
+         
 
         } 
 
