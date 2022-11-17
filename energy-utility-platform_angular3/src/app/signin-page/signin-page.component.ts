@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from '../user';
 
 @Component({
@@ -12,7 +13,7 @@ export class SigninPageComponent implements OnInit {
 
  host="http://localhost:8080"
   url1=this.host+"/insertUser"
-  constructor(private httpc:HttpClient) { }
+  constructor(private httpc:HttpClient,private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -111,6 +112,8 @@ export class SigninPageComponent implements OnInit {
       vld.textContent="Person was signed in succesfully"
       err.textContent=""
      }
+
+     this.router.navigate(["/login"])
     
     },errors=>
 {    

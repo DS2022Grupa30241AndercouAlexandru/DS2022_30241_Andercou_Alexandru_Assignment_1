@@ -116,8 +116,11 @@ export class UserPageComponent implements OnInit {
 
       var dataSet: any[]=[];
       var labels:any=[];
-     for(let device of devices )
-     {      var dataValues:any=[ ] 
+    // for(let device of devices )
+    if(this.device_searched==true)
+      {     
+            var  device=this.device_search;
+            var dataValues:any=[ ] 
             var label=device["name"]+ " kW/h"
             
            console.log("DEVICE:",i,device);
@@ -303,9 +306,11 @@ export class UserPageComponent implements OnInit {
     }
 
     var row = document.createElement("tr");
-  
+     let i=0;
     for (let [key, value] of Object.entries(user)) {
-
+      i++;
+     if(i<=5)
+     {
       var elem = document.createElement("td");
       var input = document.createElement("input");
 
@@ -328,6 +333,7 @@ export class UserPageComponent implements OnInit {
         
       elem.appendChild(input);
       row.appendChild(elem);
+    }
 
     }
 
