@@ -34,8 +34,7 @@ export class UserPageComponent implements OnInit {
     pagingType: 'full_numbers',
     pageLength: 5,
     processing: true
-
-
+   
    }
    this.host=lt.getHost();
    this.url1=this.host+"/user/"
@@ -248,7 +247,7 @@ export class UserPageComponent implements OnInit {
            
            this.dtTrigger.next("2");
            this. remove_duplicates_devices()
-           this.make_Chart(this.devices,this.day);
+         
 
 
 
