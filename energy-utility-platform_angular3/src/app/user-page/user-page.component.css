@@ -43,7 +43,7 @@ body{
     width:100vw;
     align-items: center;
     transform:translateX(-17px);
- 
+    height:100vw;
 
 }
 table{

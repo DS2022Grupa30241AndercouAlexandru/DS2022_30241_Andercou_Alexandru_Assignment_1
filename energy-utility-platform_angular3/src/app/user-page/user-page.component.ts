@@ -8,6 +8,7 @@ import { Device } from '../device';
 import { Measurement } from '../measurement';
 import { Subject } from 'rxjs/internal/Subject';
 import { LocatorService } from '../locator.service';
+import * as Highcharts from 'highcharts';
 
 
 
@@ -108,22 +109,27 @@ export class UserPageComponent implements OnInit {
 
 
           let i=0;
-          var canvas= document.getElementById("canvas");
+       
         
         
 
-     if(canvas && canvas instanceof HTMLCanvasElement)
+   
      {
 
       var dataSet: any[]=[];
       var labels:any=[];
+      var  device=this.device_search;
+      var name="None"
     // for(let device of devices )
     if(this.device_searched==true)
       {     
-            var  device=this.device_search;
+            
             var dataValues:any=[ ] 
             var label="kW/h"
-            
+            name=device.name
+
+  
+
 
            console.log("DEVICE:",i,device);
            i=i+1
@@ -155,71 +161,32 @@ export class UserPageComponent implements OnInit {
 
            dataSet.push({data:dataValues,label:label});
         }
-                 
 
-        console.log("dataset:",dataSet);
-        var ctx=canvas.getContext("2d")
-        if(ctx){
-                   
-              if(this.chart)
-              {
-                this.chart.destroy()
-                 this.chart=null
-              }
-            
-              
-          this.chart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: labels,
-                datasets:dataSet,
-                      
-            },
-            plugins:[
-              {
-                id: "tooltipLine",
-                 afterDraw:chart=>
-                 {
-                  chart.ctx
-                 }
-
-              }
-            ]
-            ,
-            options: {
-              plugins: {
-                
-                
-                legend: {
-                    display: true,
-                    position:'left',
-                    labels: {
-                        color: 'rgb(255, 99, 132)'
-                    }}
-                  },
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                    
-                },
-            
-
-
-            },
-           
-            
+        this.chart= Highcharts.chart('container', {
+          chart: {
+              type: 'spline'
+          },
+          title: {
+            text: 'Energy consumption'
         },
-      
 
+          xAxis: {
 
-        );
-        ctx.fillText("Hours",canvas.getBoundingClientRect ().height/2+ 100,canvas.getBoundingClientRect ().height+20)
-        
+              categories: labels,
+              title:{
+               text: "Hours"
+              },
+          },
+          yAxis: {
+              title: {
+                  text: 'KW/h'
+              }},
+            
+           series:[{ name:name, data:dataValues,type:'line'} ],
 
-        
-      
-              }
+        });
+
+       console.log("CHART:",this.chart);
             
             
             
