@@ -24,7 +24,10 @@ export class UserPageComponent implements OnInit {
   day:any;
   dtOptions: DataTables.Settings = {};
   dtTrigger: Subject<any> = new Subject<any>();
+  device_search:any;
+  device_searched=false;
   url1=this.host+"/user/"
+  url13 =this.host+ "/device"
   constructor(private httpc:HttpClient,private router:Router,private lt: LocatorService) { this.dtOptions = {
    
     pagingType: 'full_numbers',
@@ -35,6 +38,7 @@ export class UserPageComponent implements OnInit {
    }
    this.host=lt.getHost();
    this.url1=this.host+"/user/"
+   this.url13 =this.host+ "/device"
   }
 
         remove_duplicates_devices(){
@@ -262,4 +266,75 @@ export class UserPageComponent implements OnInit {
    }
 
   }
+
+
+
+  searchDevice() {
+    console.log("searching...");
+    var val = document.getElementById("dsearch");
+    if (val && val instanceof HTMLInputElement) {
+      console.log("field is input");
+
+      this.searchDeviceById(Number(val.value))
+    }
+
+
+
+  }
+
+  searchDeviceById(id: number) {
+    this.httpc.get(this.url13 + "/" + id).subscribe(response => {
+      this.device_search = response;
+      this.renderDeviceAfterSearch(this.device_search);
+      this.device_searched=true;
+    },error=>alert("Couldn't find device"))
+  }
+
+  renderDeviceAfterSearch(user: any) {
+    var tb = document.getElementById("dtb")
+
+    var T = document.getElementById("tbduid")
+
+    if (tb) {
+      var childs = tb.children;
+      for (let i = childs.length - 1; i >= 0; i--) {
+        tb.removeChild(childs[i]);
+      }
+    }
+
+    var row = document.createElement("tr");
+  
+    for (let [key, value] of Object.entries(user)) {
+
+      var elem = document.createElement("td");
+      var input = document.createElement("input");
+
+          if(key=='id')
+            {
+              input.disabled=true;
+        
+            }
+
+
+
+      if (value instanceof Array) {
+        input.value = ""
+      }
+      else
+      {
+        input.value = String(value)
+        input.className="device_"+key;
+      }
+        
+      elem.appendChild(input);
+      row.appendChild(elem);
+
+    }
+
+    if (tb)
+      tb.appendChild(row);
+    if (T)
+      T.classList.remove("hidden");
+  }
+
 }
