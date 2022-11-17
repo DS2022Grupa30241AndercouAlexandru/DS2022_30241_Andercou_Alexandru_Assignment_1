@@ -43,7 +43,6 @@ body{
     width:100vw;
     align-items: center;
     transform:translateX(-17px);
-    height:100vh;
 
 }
 table{
@@ -57,4 +56,8 @@ div .chart_use
 {
 
     background-color: white;
+}
+html
+{
+    background-color: gainsboro;
 }
