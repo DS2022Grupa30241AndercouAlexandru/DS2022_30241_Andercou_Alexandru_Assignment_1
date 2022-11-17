@@ -104,6 +104,7 @@ map_searched=false
   }
 
   ngOnInit() {
+    
     this.host=this.ls.getHost();
     var ua = sessionStorage.getItem("type");
     if (ua == "ADMIN") {

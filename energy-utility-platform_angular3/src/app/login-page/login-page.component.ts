@@ -84,7 +84,9 @@ export class LoginPageComponent implements OnInit {
         {
           
          msg.innerText="Log In Succesfull"
+         
          alert("Login was succesfull");
+         
          msg.classList.remove("hidden")
 
 
