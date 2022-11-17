@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecded0bb-035d-494e-bf41-1597c4e5eda3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../energy-utility-platform_angular3/Docker-compose.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energy-utility-platform_angular3/src/app/admin-page/admin-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../energy-utility-platform_angular3/src/app/admin-page/admin-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/DeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/DeviceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/dto/DeviceMeasurementDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/dto/DeviceMeasurementDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/entities/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/entities/UserAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +90,7 @@
       <workItem from="1668448697437" duration="749000" />
       <workItem from="1668496788444" duration="4143000" />
       <workItem from="1668551834382" duration="612000" />
+      <workItem from="1668666701739" duration="640000" />
     </task>
     <servers />
   </component>

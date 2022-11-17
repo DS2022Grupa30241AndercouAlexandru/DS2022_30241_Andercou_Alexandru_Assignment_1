@@ -52,10 +52,6 @@ export class SigninPageComponent implements OnInit {
       return;
      }
 
-
-if( userForm.controls["role"].value=='Admin')
-       rol=0;
-       else
        rol=1;
 
     var user:User={
