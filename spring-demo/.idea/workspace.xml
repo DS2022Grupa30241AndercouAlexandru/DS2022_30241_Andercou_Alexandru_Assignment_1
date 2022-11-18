@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecded0bb-035d-494e-bf41-1597c4e5eda3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ad40baa7-3712-461c-af09-ac042048ef38.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ad40baa7-3712-461c-af09-ac042048ef38.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f77c85e6-21bd-4a3c-9d03-3304235851f3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f77c85e6-21bd-4a3c-9d03-3304235851f3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/DeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/DeviceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/dto/Devicedto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/dto/Devicedto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/dto/DeviceMeasurementDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/dto/DeviceMeasurementDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/dto/MeasurementDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ro/tuc/ds2022/controllers/handlers/dto/MeasurementDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +95,7 @@
       <workItem from="1668551834382" duration="612000" />
       <workItem from="1668666701739" duration="3314000" />
       <workItem from="1668760755746" duration="1940000" />
-      <workItem from="1668774181600" duration="5068000" />
+      <workItem from="1668774181600" duration="6461000" />
     </task>
     <servers />
   </component>

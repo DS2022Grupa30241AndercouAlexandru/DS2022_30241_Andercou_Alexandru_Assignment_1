@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class MeasurementDto {
 
-   private Long energyCon;
+   private Float energyCon;
    private String  unityOfM;
 
    private String timestamp;

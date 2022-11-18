@@ -6,6 +6,6 @@ import lombok.Data;
 public class DeviceMeasurementDto {
     private Long device_id;
     private String timestamp;
-    private Long energyCon;
+    private Float energyCon;
 
 }
