@@ -84,7 +84,7 @@ public class DeviceController {
            m2.setEnergyConsumption(r);
            m2.setUnityOfMeasurement("kW/h");
            m2.setId(Long.valueOf(0));
-           Timestamp t=Timestamp.valueOf(dm.getTimestamp()+":00");
+           Timestamp t=Timestamp.valueOf(dm.getTimestamp());
 
 
 

@@ -335,7 +335,7 @@ map_searched=false
 
 
   addMeasure(measureForm: any) {
-    var timedate = measureForm.controls["date"].value + " " + measureForm.controls["hour"].value;
+    var timedate = measureForm.controls["date"].value + " " + measureForm.controls["hour"].value+":00";
     var energy = Number(measureForm.controls["engCon"].value)
     var symbol = "KW/h"
 

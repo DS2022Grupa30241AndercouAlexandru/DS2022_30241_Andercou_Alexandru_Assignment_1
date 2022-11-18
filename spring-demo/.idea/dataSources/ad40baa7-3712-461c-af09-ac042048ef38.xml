@@ -4,19 +4,19 @@
     <root id="1">
       <ServerVersion>14.5</ServerVersion>
     </root>
-    <database id="2" parent="1" name="city-db"/>
-    <database id="3" parent="1" name="energy-db"/>
-    <database id="4" parent="1" name="postgis_31_sample"/>
-    <database id="5" parent="1" name="postgis_32_sample"/>
-    <database id="6" parent="1" name="postgres">
+    <database id="2" parent="1" name="postgres">
       <Current>1</Current>
     </database>
-    <database id="7" parent="1" name="template0"/>
-    <database id="8" parent="1" name="template1"/>
-    <schema id="9" parent="6" name="information_schema"/>
-    <schema id="10" parent="6" name="pg_catalog"/>
-    <schema id="11" parent="6" name="pgagent"/>
-    <schema id="12" parent="6" name="public">
+    <database id="3" parent="1" name="postgis_31_sample"/>
+    <database id="4" parent="1" name="template1"/>
+    <database id="5" parent="1" name="template0"/>
+    <database id="6" parent="1" name="postgis_32_sample"/>
+    <database id="7" parent="1" name="city-db"/>
+    <database id="8" parent="1" name="energy-db"/>
+    <schema id="9" parent="2" name="information_schema"/>
+    <schema id="10" parent="2" name="pg_catalog"/>
+    <schema id="11" parent="2" name="pgagent"/>
+    <schema id="12" parent="2" name="public">
       <Current>1</Current>
     </schema>
   </database-model>
